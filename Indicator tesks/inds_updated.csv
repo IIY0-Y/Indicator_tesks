@@ -1,0 +1,159 @@
+indicator_class,indicator_name,indicator_payload,indicator_input_col,indicator_return_col,chart_area,chart_type,ind_type
+Overlap Studies,BBANDS,"{'timeperiod': 5, 'nbdevup': 2, 'nbdevdn': 2, 'matype': 0}",real,"upperband,middleband,lowerband",overlays,line,nn
+Overlap Studies,DEMA,{'timeperiod': 30},real,real,overlays,line,11
+Overlap Studies,EMA,{'timeperiod': 30},real,real,overlays,line,11
+Overlap Studies,HT_TRENDLINE,{},real,real,overlays,line,01
+Overlap Studies,KAMA,{'timeperiod': 30},real,real,overlays,line,11
+Overlap Studies,MA,"{'timeperiod': 30, 'matype': 0}",real,real,overlays,line,n1
+Overlap Studies,MAMA,"{'fastlimit': 0, 'slowlimit': 0}",real,"mama,fama",overlays,line,nn
+Overlap Studies,MAVP,"{'minperiod': 2, 'maxperiod': 30, 'matype': 0}","real,periods",real,overlays,line,n1
+Overlap Studies,MIDPOINT,{'timeperiod': 14},real,real,overlays,line,11
+Overlap Studies,MIDPRICE,{'timeperiod': 14},"high,low",real,overlays,line,11
+Overlap Studies,SAR,"{'acceleration': 0, 'maximum': 0}","high,low",real,overlays,line,n1
+Overlap Studies,SAREXT,"{'startvalue': 0, 'offsetonreverse': 0, 'accelerationinitlong': 0, 'accelerationlong': 0, 'accelerationmaxlong': 0, 'accelerationinitshort': 0, 'accelerationshort': 0, 'accelerationmaxshort': 0}","high,low",real,overlays,line,n1
+Overlap Studies,SMA,{'timeperiod': 30},real,real,overlays,line,11
+Overlap Studies,T3,"{'timeperiod': 5, 'vfactor': 0}",real,real,overlays,line,n1
+Overlap Studies,TEMA,{'timeperiod': 30},real,real,overlays,line,11
+Overlap Studies,TRIMA,{'timeperiod': 30},real,real,overlays,line,11
+Overlap Studies,WMA,{'timeperiod': 30},real,real,overlays,line,11
+Momentum Indicators,ADX,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Momentum Indicators,ADXR,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Momentum Indicators,APO,"{'fastperiod': 12, 'slowperiod': 26, 'matype': 0}",real,real,Oscillators,line,n1
+Momentum Indicators,AROON,{'timeperiod': 14},"high,low","aroondown,aroonup",Oscillators,line,1n
+Momentum Indicators,AROONOSC,{'timeperiod': 14},"high,low",real,Oscillators,line,11
+Momentum Indicators,BOP,{},"open,high,low,close",real,Oscillators,line,01
+Momentum Indicators,CCI,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Momentum Indicators,CMO,{'timeperiod': 14},real,real,Oscillators,line,11
+Momentum Indicators,DX,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Momentum Indicators,MACD,"{'fastperiod': 12, 'slowperiod': 26, 'signalperiod': 9}",real,"macd,macdsignal,macdhist",Oscillators,line,nn
+Momentum Indicators,MACDEXT,"{'fastperiod': 12, 'fastmatype': 0, 'slowperiod': 26, 'slowmatype': 0, 'signalperiod': 9, 'signalmatype': 0}",real,"macd,macdsignal,macdhist",Oscillators,line,nn
+Momentum Indicators,MACDFIX,{'signalperiod': 9},real,"macd,macdsignal,macdhist",Oscillators,line,1n
+Momentum Indicators,MFI,{'timeperiod': 14},"high,low,close,volume",real,Oscillators,line,11
+Momentum Indicators,MINUS_DI,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Momentum Indicators,MINUS_DM,{'timeperiod': 14},"high,low",real,Oscillators,line,11
+Momentum Indicators,MOM,{'timeperiod': 10},real,real,Oscillators,line,11
+Momentum Indicators,PLUS_DI,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Momentum Indicators,PLUS_DM,{'timeperiod': 14},"high,low",real,Oscillators,line,11
+Momentum Indicators,PPO,"{'fastperiod': 12, 'slowperiod': 26, 'matype': 0}",real,real,Oscillators,line,n1
+Momentum Indicators,ROC,{'timeperiod': 10},real,real,Oscillators,line,11
+Momentum Indicators,ROCP,{'timeperiod': 10},real,real,Oscillators,line,11
+Momentum Indicators,ROCR,{'timeperiod': 10},real,real,Oscillators,line,11
+Momentum Indicators,ROCR100,{'timeperiod': 10},real,real,Oscillators,line,11
+Momentum Indicators,RSI,{'timeperiod': 14},real,real,Oscillators,line,11
+Momentum Indicators,STOCH,"{'fastk_period': 5, 'slowk_period': 3, 'slowk_matype': 0, 'slowd_period': 3, 'slowd_matype': 0}","high,low,close","slowk,slowd",Oscillators,line,nn
+Momentum Indicators,STOCHF,"{'fastk_period': 5, 'fastd_period': 3, 'fastd_matype': 0}","high,low,close","fastk,fastd",Oscillators,line,nn
+Momentum Indicators,STOCHRSI,"{'timeperiod': 14, 'fastk_period': 5, 'fastd_period': 3, 'fastd_matype': 0}",real,"fastk,fastd",Oscillators,line,nn
+Momentum Indicators,TRIX,{'timeperiod': 30},real,real,Oscillators,line,11
+Momentum Indicators,ULTOSC,"{'timeperiod1': 7, 'timeperiod2': 14, 'timeperiod3': 28}","high,low,close",real,Oscillators,line,n1
+Momentum Indicators,WILLR,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Volume Indicators,AD,{},"high,low,close,volume",real,Oscillators,line,01
+Volume Indicators,ADOSC,"{'fastperiod': 3, 'slowperiod': 10}","high,low,close,volume",real,Oscillators,line,n1
+Volume Indicators,OBV,{},"close,volume",real,overlays,line,01
+Volatility Indicators,ATR,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Volatility Indicators,NATR,{'timeperiod': 14},"high,low,close",real,Oscillators,line,11
+Volatility Indicators,TRANGE,{},"high,low,close",real,Oscillators,line,01
+Price Transform,AVGPRICE,{},"open,high,low,close",real,overlays,line,01
+Price Transform,MEDPRICE,{},"high,low",real,overlays,line,01
+Price Transform,TYPPRICE,{},"high,low,close",real,overlays,line,01
+Price Transform,WCLPRICE,{},"high,low,close",real,overlays,line,01
+Cycle Indicators,HT_DCPERIOD,{},real,real,Oscillators,line,01
+Cycle Indicators,HT_DCPHASE,{},real,real,Oscillators,line,01
+Cycle Indicators,HT_PHASOR,{},real,"inphase,quadrature",Oscillators,line,0n
+Cycle Indicators,HT_SINE,{},real,"sine,leadsine",Oscillators,line,0n
+Cycle Indicators,HT_TRENDMODE,{},real,integer,Oscillators,line,01
+Pattern Recognition,CDL2CROWS,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDL3BLACKCROWS,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDL3INSIDE,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDL3LINESTRIKE,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDL3OUTSIDE,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDL3STARSINSOUTH,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDL3WHITESOLDIERS,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLABANDONEDBABY,{'penetration': 0},"open,high,low,close",integer,overlays,line,11
+Pattern Recognition,CDLADVANCEBLOCK,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLBELTHOLD,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLBREAKAWAY,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLCLOSINGMARUBOZU,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLCONCEALBABYSWALL,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLCOUNTERATTACK,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLDARKCLOUDCOVER,{'penetration': 0},"open,high,low,close",integer,overlays,line,11
+Pattern Recognition,CDLDOJI,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLDOJISTAR,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLDRAGONFLYDOJI,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLENGULFING,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLEVENINGDOJISTAR,{'penetration': 0},"open,high,low,close",integer,overlays,line,11
+Pattern Recognition,CDLEVENINGSTAR,{'penetration': 0},"open,high,low,close",integer,overlays,line,11
+Pattern Recognition,CDLGAPSIDESIDEWHITE,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLGRAVESTONEDOJI,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLHAMMER,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLHANGINGMAN,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLHARAMI,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLHARAMICROSS,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLHIGHWAVE,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLHIKKAKE,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLHIKKAKEMOD,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLHOMINGPIGEON,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLIDENTICAL3CROWS,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLINNECK,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLINVERTEDHAMMER,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLKICKING,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLKICKINGBYLENGTH,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLLADDERBOTTOM,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLLONGLEGGEDDOJI,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLLONGLINE,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLMARUBOZU,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLMATCHINGLOW,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLMATHOLD,{'penetration': 0},"open,high,low,close",integer,Oscillators,line,11
+Pattern Recognition,CDLMORNINGDOJISTAR,{'penetration': 0},"open,high,low,close",integer,Oscillators,line,11
+Pattern Recognition,CDLMORNINGSTAR,{'penetration': 0},"open,high,low,close",integer,Oscillators,line,11
+Pattern Recognition,CDLONNECK,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLPIERCING,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLRICKSHAWMAN,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLRISEFALL3METHODS,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLSEPARATINGLINES,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLSHOOTINGSTAR,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLSHORTLINE,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLSPINNINGTOP,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLSTALLEDPATTERN,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLSTICKSANDWICH,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLTAKURI,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLTASUKIGAP,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLTHRUSTING,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLTRISTAR,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLUNIQUE3RIVER,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLUPSIDEGAP2CROWS,{},"open,high,low,close",integer,overlays,line,01
+Pattern Recognition,CDLXSIDEGAP3METHODS,{},"open,high,low,close",integer,overlays,line,01
+Statistic Functions,BETA,{'timeperiod': 5},"real0,real1",real,Oscillators,line,11
+Statistic Functions,CORREL,{'timeperiod': 30},"real0,real1",real,Oscillators,line,11
+Statistic Functions,LINEARREG,{'timeperiod': 14},real,real,overlays,line,11
+Statistic Functions,LINEARREG_ANGLE,{'timeperiod': 14},real,real,Oscillators,line,11
+Statistic Functions,LINEARREG_INTERCEPT,{'timeperiod': 14},real,real,Oscillators,line,11
+Statistic Functions,LINEARREG_SLOPE,{'timeperiod': 14},real,real,Oscillators,line,11
+Statistic Functions,STDDEV,"{'timeperiod': 5, 'nbdev': 1}",real,real,Oscillators,line,n1
+Statistic Functions,TSF,{'timeperiod': 14},real,real,Oscillators,line,11
+Statistic Functions,VAR,"{'timeperiod': 5, 'nbdev': 1}",real,real,Oscillators,line,n1
+Math Transform,ACOS,{},real,real,overlays,line,01
+Math Transform,ASIN,{},real,real,overlays,line,01
+Math Transform,ATAN,{},real,real,overlays,line,01
+Math Transform,CEIL,{},real,real,overlays,line,01
+Math Transform,COS,{},real,real,overlays,line,01
+Math Transform,COSH,{},real,real,overlays,line,01
+Math Transform,EXP,{},real,real,overlays,line,01
+Math Transform,FLOOR,{},real,real,overlays,line,01
+Math Transform,LN,{},real,real,overlays,line,01
+Math Transform,LOG10,{},real,real,overlays,line,01
+Math Transform,SIN,{},real,real,overlays,line,01
+Math Transform,SINH,{},real,real,overlays,line,01
+Math Transform,SQRT,{},real,real,overlays,line,01
+Math Transform,TAN,{},real,real,overlays,line,01
+Math Transform,TANH,{},real,real,overlays,line,01
+Math Operators,ADD,{},"real0,real1",real,overlays,line,01
+Math Operators,DIV,{},"real0,real1",real,overlays,line,01
+Math Operators,MAX,{'timeperiod': 30},real,real,overlays,line,11
+Math Operators,MAXINDEX,{'timeperiod': 30},real,integer,Oscillators,line,11
+Math Operators,MIN,{'timeperiod': 30},real,real,overlays,line,11
+Math Operators,MININDEX,{'timeperiod': 30},real,integer,Oscillators,line,11
+Math Operators,MINMAX,{'timeperiod': 30},real,"min,max",Oscillators,line,1n
+Math Operators,MINMAXINDEX,{'timeperiod': 30},real,"minidx,maxidx",Oscillators,line,1n
+Math Operators,MULT,{},"real0,real1",real,overlays,line,01
+Math Operators,SUB,{},"real0,real1",real,overlays,line,01
+Math Operators,SUM,{'timeperiod': 30},real,real,overlays,line,11
