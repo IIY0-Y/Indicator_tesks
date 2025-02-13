@@ -1,6 +1,16 @@
-# import pandas_ta as pta
+import pandas as pd
 import talib as ta
-from Indicators import *
+from Cycle_Indicators import *
+from Math_Operators import *
+from Math_Transform import *
+from Pattern_Recognition import *
+from Price_Transform import *
+from Statistic_Functions import *
+from Volatility_Indicators import *
+from Volume_Indicators import *
+from Momentum_Indicators import *
+from Overlap_Studies import *
+
 
 
 class Ind:
