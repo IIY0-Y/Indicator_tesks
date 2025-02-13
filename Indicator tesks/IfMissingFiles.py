@@ -101,5 +101,5 @@ def analyze_indicators(csv_path, root_dir):
 
 if __name__ == "__main__":
     csv_path = "./inds_updated.csv"
-    root_dir = "./indicators"
+    root_dir = "./Indicators"
     analyze_indicators(csv_path, root_dir)
