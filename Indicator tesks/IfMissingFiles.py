@@ -100,6 +100,6 @@ def analyze_indicators(csv_path, root_dir):
 
 
 if __name__ == "__main__":
-    csv_path = "C:/Users/PC/Downloads/Indicator_tesks-main/Indicator_tesks-main/Indicator tesks/inds_updated.csv"
-    root_dir = "C:/Users/PC/Downloads/portfolio"
+    csv_path = "./inds_updated.csv"
+    root_dir = "./indicators"
     analyze_indicators(csv_path, root_dir)
