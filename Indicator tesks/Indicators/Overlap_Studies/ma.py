@@ -1,5 +1,18 @@
 import pandas as pd
 import talib as ta
+CONFIG = {
+    "indicator_class": "Overlap Studies",
+    "indicator_name": "MA",
+    "indicator_payload": {
+        "timeperiod": 30,
+        "matype": 0
+    },
+    "indicator_input_col": "real",
+    "indicator_return_col": "real",
+    "chart_area": "overlays",
+    "chart_type": "line",
+    "ind_type": "n1"
+}
 
 def ma(df, col, coin_symbol, interval, is_price, timeperiod=30, matype=0):
     if is_price:

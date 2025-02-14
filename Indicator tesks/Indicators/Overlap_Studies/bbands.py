@@ -1,5 +1,24 @@
 import talib as ta
 import pandas as pd
+CONFIG = {
+    "indicator_class": "Overlap Studies",
+    "indicator_name": "BBANDS",
+    "indicator_payload": {
+        "timeperiod": 5,
+        "nbdevup": 2,
+        "nbdevdn": 2,
+        "matype": 0
+    },
+    "indicator_input_col": "real",
+    "indicator_return_col": {
+        "0": "upperband",
+        "1": "middleband",
+        "2": "lowerband"
+    },
+    "chart_area": "overlays",
+    "chart_type": "line",
+    "ind_type": "nn"
+}
 
 class Bbands:
     def __init__(self):
