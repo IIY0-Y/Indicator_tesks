@@ -1,5 +1,18 @@
 import pandas as pd
 import talib as ta
+CONFIG = {
+    "indicator_class": "Math Operators",
+    "indicator_name": "MINMAX",
+    "indicator_payload": "'timeperiod': 30",
+    "indicator_input_col": "real",
+    "indicator_return_col": {
+        "0": "min",
+        "1": "max"
+    },
+    "chart_area": "Oscillators",
+    "chart_type": "line",
+    "ind_type": "1n"
+}
 
 def minmax(df, col, coin_symbol, interval, is_price, timeperiod=30):
     minmax = ta.MINMAX(df[col], timeperiod=timeperiod)
