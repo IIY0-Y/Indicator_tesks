@@ -1,5 +1,15 @@
 import pandas as pd
 import talib as ta
+CONFIG = {
+    "indicator_class": "Math Transform",
+    "indicator_name": "CEIL",
+    "indicator_payload": "",
+    "indicator_input_col": "real",
+    "indicator_return_col": "real",
+    "chart_area": "overlays",
+    "chart_type": "line",
+    "ind_type": "1"
+}
 
 def ceil(df, col, coin_symbol, interval, is_price):
     if is_price:
