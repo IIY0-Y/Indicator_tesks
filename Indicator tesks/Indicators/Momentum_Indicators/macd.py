@@ -1,5 +1,23 @@
 import pandas as pd
 import talib as ta
+CONFIG = {
+    "indicator_class": "Momentum Indicators",
+    "indicator_name": "MACD",
+    "indicator_payload": {
+        "fastperiod": 12,
+        "slowperiod": 26,
+        "signalperiod": 9
+    },
+    "indicator_input_col": "real",
+    "indicator_return_col": {
+        "0": "macd",
+        "1": "macdsignal",
+        "2": "macdhist"
+    },
+    "chart_area": "Oscillators",
+    "chart_type": "line",
+    "ind_type": "nn"
+}
 
 def macd(df, col, coin_symbol, interval, is_price, fastperiod=12, slowperiod=26, signalperiod=9):
     macd = ta.MACD(df[col], fastperiod=fastperiod, slowperiod=slowperiod, signalperiod=signalperiod)

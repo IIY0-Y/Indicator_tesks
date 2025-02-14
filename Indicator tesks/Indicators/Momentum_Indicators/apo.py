@@ -1,5 +1,19 @@
 import pandas as pd
 import talib as ta
+CONFIG = {
+    "indicator_class": "Momentum Indicators",
+    "indicator_name": "APO",
+    "indicator_payload": {
+        "fastperiod": 12,
+        "slowperiod": 26,
+        "matype": 0
+    },
+    "indicator_input_col": "real",
+    "indicator_return_col": "real",
+    "chart_area": "Oscillators",
+    "chart_type": "line",
+    "ind_type": "n1"
+}
 
 def apo(df, col, coin_symbol, interval, is_price, fastperiod=12, slowperiod=26, matype=0):
     if is_price:
