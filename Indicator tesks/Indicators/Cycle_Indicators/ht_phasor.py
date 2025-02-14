@@ -1,5 +1,18 @@
 import pandas as pd
 import talib as ta
+CONFIG = {
+    "indicator_class": "Cycle Indicators",
+    "indicator_name": "HT_PHASOR",
+    "indicator_payload": "",
+    "indicator_input_col": "real",
+    "indicator_return_col": {
+        "0": "inphase",
+        "1": "quadrature"
+    },
+    "chart_area": "Oscillators",
+    "chart_type": "line",
+    "ind_type": "0n"
+}
 
 def ht_phasor(df, col, coin_symbol, interval, is_price):
     ht_phasor = ta.HT_PHASOR(df[col])
